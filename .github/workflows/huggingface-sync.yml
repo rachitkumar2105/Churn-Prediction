@@ -16,4 +16,9 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://rachitkumar2105:$HF_TOKEN@huggingface.co/spaces/rachitkumar2105/churn-prediction-api main
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "Error: HF_TOKEN is not set in GitHub Secrets."
+            exit 1
+          fi
+          git push --force https://rachitkumar2105:$HF_TOKEN@huggingface.co/spaces/rachitkumar2105/churn-prediction-api main
