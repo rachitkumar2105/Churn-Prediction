@@ -1,3 +1,12 @@
+---
+title: Churn Prediction API
+emoji: 📊
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
+
 # IntelliChurn AI - Intelligent Customer Churn Prediction Platform
 
 IntelliChurn AI is a complete, end-to-end production-grade system that leverages machine learning (XGBoost), deep learning (TensorFlow), and Explainable AI (SHAP) to predict customer churn and provide actionable business insights.
