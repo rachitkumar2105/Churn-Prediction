@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+dist/
+build/
+*.egg-info/
+
+# Node
+node_modules/
+frontend/dist/
+.env
+.env.local
+
+# ML Models (Optional: exclude if very large, but keeping them for now if they are needed for deployment)
+# model/*.h5
+# model/*.pkl
+# model/*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
